@@ -1,0 +1,26 @@
+.my_height{
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+.imgradious{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.messaggio{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.myWidth{
+    width: 70%;
+}
+.radiousInput{
+    border-radius: 20px;
+}
+.sfondoChat{
+    background-image: url(./bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png) ;
+    background-size: cover;
+    background-color: black;
+}
