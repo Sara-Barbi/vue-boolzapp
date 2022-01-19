@@ -2,7 +2,6 @@ let app = new Vue ({
     el: ("#root"),
     data:{
         contatore: 0,
-        answer:null,
         contacts: [
             {
             name: 'Michele',
@@ -49,6 +48,7 @@ let app = new Vue ({
                        }
                     ],
             },
+
             {
             name: 'Samuele',
             avatar: '3',
@@ -71,6 +71,7 @@ let app = new Vue ({
                         }
                     ],
             },
+
             {
             name: 'Luisa',
             avatar: '4',
@@ -90,7 +91,7 @@ let app = new Vue ({
             },
 
         ],    
-        contenuto:"", 
+        contenuto:" ", 
     },
   
   
@@ -99,7 +100,7 @@ let app = new Vue ({
           
            this.contatore= indice;
 
-           console.log(contatore);
+           return this.contatore
            
        },
        pushaRisposta :function(){
@@ -108,25 +109,33 @@ let app = new Vue ({
             text: "ok",
             status: "received"
         }
-           
-        this.contacts[this.contatore].messages.push(rispostaUtente)
+      
+      
+        this.contacts[this.ChatPrincipale].messages.push(rispostaUtente)
        },
 
 
        pushaContenuto: function(){
+            contenuto =" ";
+            
             let oggetto={
                date: "now",
                text: this.contenuto,
                status: "sent"
             };
-
-            this.contacts[this.contatore].messages.push(oggetto);
-
-            this.answer=setTimeout(this.pushaRisposta,1000);
             
-
-
+            
+            this.contacts[this.ChatPrincipale].messages.push(oggetto);
+            
+            setTimeout(this.pushaRisposta,1000);
+         
+            
        },
+       
+       
+       
+    
+       
 
     },
 

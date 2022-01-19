@@ -22,7 +22,7 @@
 .sfondoChat{
     background-image: url(./bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png) ;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.361);
+    background-color: rgba(0, 0, 0, 0.707);
 }
 .inputMessaggio{
     background-color: rgb(42, 42, 42);
@@ -60,5 +60,4 @@
     bottom: 0px;
     right: 5px;
     font-size: 8px;
-
 }
