@@ -20,26 +20,31 @@
                   </div>
             </div>
             <div class="col-8 my_height d-flex align-items-center justify-content-between">
-                <img class="imgradious me-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm81XoZa9dFFAFPY-LjxgJ-XAj-KeySicSvw&usqp=CAU" alt="">
-                <h6>nome dell'utente</h6>
-                <div class="">
 
-                    <i class="bi bi-camera-video  m-2"></i>
-                    <i class="bi bi-telephone  m-2"></i>
+                    <div class="d-flex align-items-center" v-for="(elemento,indice) in contacts">
+                        <img class="imgradious me-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm81XoZa9dFFAFPY-LjxgJ-XAj-KeySicSvw&usqp=CAU" alt="">
+                        <h6 >{{contacts[indice].name}}</h6>
+                    </div>
                     
-                    <i class="bi bi-search  m-2"></i>
-                    <i class="bi bi-three-dots  m-2"></i>
-                </div>
+                    <div class="">
+                        
+                        <i class="bi bi-camera-video  m-2"></i>
+                        <i class="bi bi-telephone  m-2"></i>
+                        
+                        <i class="bi bi-search  m-2"></i>
+                        <i class="bi bi-three-dots  m-2"></i>
+                    </div>
+    
             </div>
         </div>
         <div class="row">
             <div class="col-4 d-flex flex-column BACKallchat">
-                <div class="myalignment">
-                    <div class="d-flex align-items-center  ">
+                <div class="myalignment" v-for="(contatto,indice) in contacts">
+                    <div class="d-flex align-items-center  " @click="ChatPrincipale(indice)">
                         <img class="imgradious me-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm81XoZa9dFFAFPY-LjxgJ-XAj-KeySicSvw&usqp=CAU" alt="">
                         <div class="row">
                             <div class="">
-                                <h6>nome Utente</h6>
+                                <h6>{{contacts[indice].name}}</h6>
                                 <span>messaggino</span>
                             </div>
                         </div>
@@ -49,9 +54,11 @@
                 </div>
 
             </div>
-            <div class="col-8 vh-100 sfondoChat d-flex flex-column">
-                <div class=" align-self-end styleMioMess">Mio mess</div>
-                <div class="align-self-start styleMessRicevuto">risposta</div>
+            <div class="col-8 vh-100 sfondoChat">
+                <div class="d-flex flex-column" v-for="(messaggi,indice) in contacts">
+                    <div class=" align-self-end styleMioMess" >mio mess</div>
+                    <div class="align-self-start styleMessRicevuto" >mess ricevuto</div>
+                </div>
 
                 <div class="messaggio col-8 d-flex justify-content-center inputMessaggio">
                     <i class="bi bi-camera-video  m-2"></i>
