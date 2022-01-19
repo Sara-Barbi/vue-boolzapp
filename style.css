@@ -22,5 +22,32 @@
 .sfondoChat{
     background-image: url(./bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png) ;
     background-size: cover;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.361);
 }
+.inputMessaggio{
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+.HRsottoutenti{
+    width: 90%;
+    color: wheat;
+    height: 1px;
+    text-align: center;
+}
+.BACKallchat{
+    background-color: rgb(22, 21, 29);
+    color: whitesmoke;
+}
+.styleMioMess{
+    padding:20px 10px;
+    background-color: rgb(175, 211, 120) ;
+    border-radius: 15px;
+}
+.styleMessRicevuto{
+    padding:20px 10px;
+    background-color: rgb(235, 236, 233) ;
+    border-radius: 15px;
+
+}
+
+
