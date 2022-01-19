@@ -1,7 +1,7 @@
 let app = new Vue ({
     el: ("#root"),
     data:{
-        contatore:-1,
+        contatore: 0,
         contacts: [
             {
             name: 'Michele',
@@ -93,7 +93,7 @@ let app = new Vue ({
     
     methods:{
        ChatPrincipale: function(indice){
-           contatore= indice;
+           this.contatore= indice;
 
            console.log(contatore);
            

@@ -21,7 +21,7 @@
             </div>
             <div class="col-8 my_height d-flex align-items-center justify-content-between">
 
-                    <div class="d-flex align-items-center" v-for="(elemento,indice) in contacts" >
+                    <div class="d-flex align-items-center">
                         <img class="imgradious me-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm81XoZa9dFFAFPY-LjxgJ-XAj-KeySicSvw&usqp=CAU" alt="">
                         <h6 >{{contacts[contatore].name}}</h6>
                     </div>
@@ -52,12 +52,11 @@
                     </div>
                     <hr class="HRsottoutenti">
                 </div>
-
             </div>
-            <div class="col-8 vh-100 sfondoChat">
-                <div class="d-flex flex-column" v-for="(messaggi,indice) in contacts">
-                    <div class=" align-self-end styleMioMess" >mio mess</div>
-                    <div class="align-self-start styleMessRicevuto" >mess ricevuto</div>
+            <div class="col-8 vh-100 sfondoChat d-flex flex-column">
+                <div class="" v-for="(messaggi,indicex) in contacts[contatore].messages" :class="`${contacts[contatore].messages[indicex].status}`">
+                    <div>{{contacts[contatore].messages[indicex].text}}</div>
+
                 </div>
 
                 <div class="messaggio col-8 d-flex justify-content-center inputMessaggio">

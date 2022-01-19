@@ -38,16 +38,18 @@
     background-color: rgb(22, 21, 29);
     color: whitesmoke;
 }
-.styleMioMess{
-    padding:20px 10px;
-    background-color: rgb(175, 211, 120) ;
-    border-radius: 15px;
-}
-.styleMessRicevuto{
-    padding:20px 10px;
+
+.received{
+    align-self: start;
+    padding:10px 10px;
     background-color: rgb(235, 236, 233) ;
     border-radius: 15px;
-
+    margin: 10px;
 }
-
-
+.sent{
+    align-self: end;
+    padding:10px 10px;
+    background-color: rgb(175, 211, 120) ;
+    border-radius: 15px;
+    margin: 10px;
+}
