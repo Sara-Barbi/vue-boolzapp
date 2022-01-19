@@ -55,7 +55,9 @@
             </div>
             <div class="col-8 vh-100 sfondoChat d-flex flex-column">
                 <div class="" v-for="(messaggi,indicex) in contacts[contatore].messages" :class="`${contacts[contatore].messages[indicex].status}`">
-                    <div>{{contacts[contatore].messages[indicex].text}}</div>
+  
+                    <span>{{contacts[contatore].messages[indicex].text}}</span>
+                    <span class="myDateMessage">{{contacts[contatore].messages[indicex].date}}</span>
 
                 </div>
 
@@ -63,7 +65,8 @@
                     <i class="bi bi-camera-video  m-2"></i>
                     <i class="bi bi-camera-video  m-2"></i>
 
-                    <input type="text" class="myWidth radiousInput">
+                    <input type="text" class="myWidth radiousInput" v-model="contenuto" @keyup.enter="pushaContenuto"  >
+                    
                     <i class="bi bi-camera-video  m-2"></i>
 
                 </div>
