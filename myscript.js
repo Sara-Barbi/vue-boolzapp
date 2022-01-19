@@ -5,7 +5,7 @@ let app = new Vue ({
         contacts: [
             {
             name: 'Michele',
-            avatar: '_1',
+            avatar: '1',
             visible: true,
             messages: [
                         {
@@ -27,7 +27,7 @@ let app = new Vue ({
             },
             {
             name: 'Fabio',
-            avatar: '_2',
+            avatar: '2',
             visible: true,
             messages: 
                     [
@@ -50,7 +50,7 @@ let app = new Vue ({
             },
             {
             name: 'Samuele',
-            avatar: '_3',
+            avatar: '3',
             visible: true,
             messages: [
                         {
@@ -72,7 +72,7 @@ let app = new Vue ({
             },
             {
             name: 'Luisa',
-            avatar: '_4',
+            avatar: '4',
             visible: true,
             messages: [
                         {
@@ -94,6 +94,7 @@ let app = new Vue ({
     methods:{
        ChatPrincipale: function(indice){
            contatore= indice;
+
            console.log(contatore);
            
        }
