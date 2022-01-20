@@ -92,7 +92,7 @@ let app = new Vue ({
 
         ],    
         contenuto:" ", 
-        search:" ",
+        search:"",
         
     },
   
@@ -133,8 +133,9 @@ let app = new Vue ({
          
             
        },
+       
        cerca:function(){
-   
+             
         this.contacts.forEach(element => {          
             if(element.name.toLowerCase().includes(this.search.toLowerCase())){
                 element.visible = true;
@@ -144,13 +145,36 @@ let app = new Vue ({
             
         });
             
+       },
+       classe:function(contatto){
+           if(contatto.visible==false){
+               return "d-none"
+           }
        }
+    },
        
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        
+    
+        
        
     
        
 
-    },
+    
 
 
     

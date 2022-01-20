@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-4 my_height">
                 <div class="input-group m-3 ms-0">
-                    <input type="text" class="form-control radiousInput" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2" id="cerca" v-model="search" @keyup="cerca()"></input>
+                    <input type="text" class="form-control radiousInput" placeholder="search"  v-model="search" @keyup="cerca()"></input>
                     <span class="input-group-text radiousInput" id="basic-addon2"><i class="bi bi-search"></i></span>
                   </div>
             </div>
@@ -39,7 +39,7 @@
         </div>
         <div class="row">
             <div class="col-4 d-flex flex-column BACKallchat">
-                <div class="myalignment" v-for="(contatto,indice) in contacts">
+                <div class="myalignment" v-for="(contatto,indice) in contacts" :class="classe(contatto)">
                     <div class="d-flex align-items-center  " @click="ChatPrincipale(indice)">
                         <img class="imgradious me-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm81XoZa9dFFAFPY-LjxgJ-XAj-KeySicSvw&usqp=CAU" alt="">
                         <div class="row">
@@ -77,6 +77,16 @@
  
 
     </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
