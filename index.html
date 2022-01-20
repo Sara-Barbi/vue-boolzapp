@@ -15,11 +15,11 @@
         <div class="row">
             <div class="col-4 my_height">
                 <div class="input-group m-3 ms-0">
-                    <input type="text" class="form-control radiousInput" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control radiousInput" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2" id="cerca" v-model="search" @keyup="cerca()"></input>
                     <span class="input-group-text radiousInput" id="basic-addon2"><i class="bi bi-search"></i></span>
                   </div>
             </div>
-            <div class="col-8 my_height d-flex align-items-center justify-content-between">
+            <div class="col-8 my_height1 d-flex align-items-center justify-content-between">
 
                     <div class="d-flex align-items-center">
                         <img class="imgradious me-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm81XoZa9dFFAFPY-LjxgJ-XAj-KeySicSvw&usqp=CAU" alt="">
@@ -53,7 +53,7 @@
                     <hr class="HRsottoutenti">
                 </div>
             </div>
-            <div class="col-8 vh-100 sfondoChat d-flex flex-column">
+            <div class="col-8 sfondoChat d-flex flex-column">
                 <div class="" v-for="(messaggi,indicex) in contacts[contatore].messages" :class="`${contacts[contatore].messages[indicex].status}`">
   
                     <span>{{contacts[contatore].messages[indicex].text}}</span>
