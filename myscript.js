@@ -111,7 +111,7 @@ let app = new Vue ({
         }
       
       
-        this.contacts[this.ChatPrincipale].messages.push(rispostaUtente)
+        this.contacts[this.contatore].messages.push(rispostaUtente)
        },
 
 
@@ -125,7 +125,7 @@ let app = new Vue ({
             };
             
             
-            this.contacts[this.ChatPrincipale].messages.push(oggetto);
+            this.contacts[this.contatore].messages.push(oggetto);
             
             setTimeout(this.pushaRisposta,1000);
          
