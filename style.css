@@ -40,7 +40,7 @@
     background-image: url(./bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png) ;
     background-size: contain;
     background-color: rgba(0, 0, 0, 0.707);
-    height: 685px;
+    height: 665px;
     
     margin-top: 60px;
 
@@ -95,4 +95,5 @@
 .myAbsolute{
     position: absolute;
     right: 0px;
+    overflow: scroll;
 }

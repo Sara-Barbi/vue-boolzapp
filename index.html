@@ -54,8 +54,8 @@
                 </div>
             </div>
             <div class="col-8 sfondoChat d-flex flex-column myAbsolute">
-                <div class="" v-for="(messaggi,indicex) in contacts[contatore].messages" :class="`${contacts[contatore].messages[indicex].status}`">
-  
+                <div class="contiene" v-for="(messaggi,indicex) in contacts[contatore].messages" :class="`${contacts[contatore].messages[indicex].status}`" >
+                   
                     <span>{{contacts[contatore].messages[indicex].text}}</span>
                     <span class="myDateMessage">{{contacts[contatore].messages[indicex].date}}</span>
 
@@ -99,7 +99,6 @@
 
 
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> <!-- Bootsrap.js -->
     <script type="text/JavaScript" src="myscript.js"></script>   <!--JavaScript-->

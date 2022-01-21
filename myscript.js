@@ -155,7 +155,11 @@ let app = new Vue ({
            if(contatto.visible==false){
                return "d-none"
            }
-       }
+       },
+       scroll: function(){
+            let chat = document.querySelector(".contiene");
+            this.chat.scrollTop = this.chat.scrollHeight;
+       },
     },
        
        
