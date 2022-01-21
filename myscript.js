@@ -6,6 +6,7 @@ let app = new Vue ({
             {
             name: 'Michele',
             avatar: '1',
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm81XoZa9dFFAFPY-LjxgJ-XAj-KeySicSvw&usqp=CAU",
             visible: true,
             messages: [
                         {
@@ -28,6 +29,7 @@ let app = new Vue ({
             {
             name: 'Fabio',
             avatar: '2',
+            img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWtlLjWebn0rGCZAvfODfKITSZLytao-Bd42Zv5CrcNdndVDeWBw_HEZ9eYTC2YuLuZsE&usqp=CAU",
             visible: true,
             messages: 
                     [
@@ -51,6 +53,7 @@ let app = new Vue ({
 
             {
             name: 'Samuele',
+            img:"https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
             avatar: '3',
             visible: true,
             messages: [
@@ -75,6 +78,7 @@ let app = new Vue ({
             {
             name: 'Luisa',
             avatar: '4',
+            img: "https://media.gettyimages.com/photos/caroline-wozniacki-attends-the-crown-img-tennis-party-on-january-19-picture-id1200475852?s=612x612" ,
             visible: true,
             messages: [
                         {
