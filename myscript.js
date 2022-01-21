@@ -111,7 +111,7 @@ let app = new Vue ({
        },
        pushaRisposta :function(){
         let rispostaUtente={
-            date: "now",
+            date: dayjs().format('DD/MM/YYYY HH:mm:ss '),
             text: "ok",
             status: "received"
         }
@@ -122,16 +122,17 @@ let app = new Vue ({
 
 
        pushaContenuto: function(){
-            contenuto =" ";
             
+        
             let oggetto={
-               date: "now",
+               date: dayjs().format('DD/MM/YYYY HH:mm:ss '),
                text: this.contenuto,
                status: "sent"
             };
             
             
             this.contacts[this.contatore].messages.push(oggetto);
+            this.contenuto ="";
             
             setTimeout(this.pushaRisposta,1000);
          

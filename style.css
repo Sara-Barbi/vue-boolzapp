@@ -41,6 +41,7 @@
     background-size: contain;
     background-color: rgba(0, 0, 0, 0.707);
     height: 685px;
+    
     margin-top: 60px;
 
 }
@@ -55,7 +56,6 @@
     text-align: center;
 }
 .BACKallchat{
-    margin-top: 60px;
     background-color: rgb(22, 21, 29);
     color: whitesmoke;
     height: 685px;
@@ -63,14 +63,18 @@
 
 .received{
     align-self: start;
+    min-width: 85px;
     padding:10px 10px;
     background-color: rgb(235, 236, 233) ;
     border-radius: 15px;
     margin: 10px;
     position:relative
+    
 }
 .sent{
     align-self: end;
+    min-width: 85px;
+
     padding:10px 10px;
     background-color: rgb(175, 211, 120) ;
     border-radius: 15px;
@@ -82,4 +86,13 @@
     bottom: 0px;
     right: 5px;
     font-size: 8px;
+}
+.myPosition{
+    position: fixed;
+    top: 60px;
+    left: 0px;
+}
+.myAbsolute{
+    position: absolute;
+    right: 0px;
 }
