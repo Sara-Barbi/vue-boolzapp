@@ -2,6 +2,7 @@ let app = new Vue ({
     el: ("#root"),
     data:{
         contatore: 0,
+        
         contacts: [
             {
             name: 'Michele',
@@ -157,6 +158,10 @@ let app = new Vue ({
             let chat = document.querySelector(".contiene");
             chat.scrollTop = this.chat.scrollHeight;
        },
+       lastElement: function(){
+           
+           
+       }
     },
        
        

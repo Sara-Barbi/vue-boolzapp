@@ -63,23 +63,16 @@
 
 .received{
     align-self: start;
-    min-width: 85px;
-    padding:10px 10px;
-    background-color: rgb(235, 236, 233) ;
-    border-radius: 15px;
-    margin: 10px;
-    position:relative
     
 }
 .sent{
     align-self: end;
-    min-width: 85px;
 
-    padding:10px 10px;
-    background-color: rgb(175, 211, 120) ;
-    border-radius: 15px;
-    margin: 10px;
-    position: relative;
+
+  background-color: rgb(175, 211, 120)!important ;
+ 
+ 
+
 }
 .myDateMessage{
     position: absolute;
@@ -98,6 +91,14 @@
     overflow: scroll;
 }
 .myalignment:hover{
-    background-color: cornflowerblue;
+    background-color: rgba(44, 45, 46, 0.524);
     cursor: pointer;
+}
+.contiene{
+    min-width: 85px;
+    padding:10px 10px;
+    background-color: rgb(235, 236, 233) ;
+    border-radius: 15px;
+    margin: 10px;
+    position:relative
 }
