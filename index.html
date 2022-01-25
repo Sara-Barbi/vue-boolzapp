@@ -55,19 +55,17 @@
             </div>
             <div class="col-8 sfondoChat d-flex flex-column myAbsolute">
        
-
-                <div v-for="(messaggi,indicex) in contacts[contatore].messages" :class="`${contacts[contatore].messages[indicex].status}`"  class="contiene" >
-                    
-                    <span>{{contacts[contatore].messages[indicex].text}}</span>
+                <div v-for="(messaggi,indicex) in contacts[contatore].messages" :class="`${contacts[contatore].messages[indicex].status}`"  class="contiene">
+                    <span >{{contacts[contatore].messages[indicex].text}}</span>
                     <span class="myDateMessage">{{contacts[contatore].messages[indicex].date}}</span>
-                    
+                
                 </div>
 
                 <div class="messaggio col-8 d-flex justify-content-center inputMessaggio">
                     <i class="bi bi-camera-video  m-2"></i>
                     <i class="bi bi-camera-video  m-2"></i>
 
-                    <input type="text" class="myWidth radiousInput" v-model="contenuto" @keyup.enter="pushaContenuto"  >
+                    <input type="text" class="myWidth radiousInput" v-model="contenuto" @keyup.enter="pushaContenuto"  @keyup="scroll"  >
                     
                     <i class="bi bi-camera-video  m-2"></i>
 

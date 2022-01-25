@@ -89,7 +89,7 @@
     position: absolute;
     right: 0px;
     top: 0;
-    overflow: scroll;
+    overflow: scroll                     ;
 }
 .myalignment:hover{
     background-color: rgba(44, 45, 46, 0.524);
@@ -97,10 +97,11 @@
 }
 .contiene{
     min-width: 85px;
-    min-height: 40px;
+    min-height: 50px;
     padding:10px 10px;
     background-color: rgb(235, 236, 233) ;
     border-radius: 15px;
     margin: 10px;
     position:relative
 }
+

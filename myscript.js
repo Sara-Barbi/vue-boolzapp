@@ -155,8 +155,10 @@ let app = new Vue ({
            }
        },
        scroll: function(){
-            let chat = document.querySelector(".contiene");
-            chat.scrollTop = this.chat.scrollHeight;
+           
+            let cha = document.querySelector(".contiene");
+            cha.scrollTop = cha.scrollHeight;
+            
        },
       
       
